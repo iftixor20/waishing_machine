@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("../fonts/roboto-bold.woff2") format("woff2"),
+    url("../fonts/roboto-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("../fonts/roboto-medium.woff2") format("woff2"),
+    url("../fonts/roboto-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("../fonts/roboto-regular.woff2") format("woff2"),
+    url("../fonts/roboto-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+html{
+  box-sizing: border-box;
+}
+
+*,*::after,*::before{
+  box-sizing: inherit;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: #D77E7C;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+}
+
+.container {
+  max-width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.main-content {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding-top: 40px;
+}
+
+.main-div-content {
+    margin: 0;
+    font-size: 15px;
+    margin-right: 250px;
+    font-weight: 500;
+    letter-spacing: 1.5;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.div-ul {
+  display: flex;
+  list-style: none;
+  font-size: 56px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.div-ul li:not(:nth-child(1)) {
+  margin-left: 50px;
+  color: rgb(219, 208, 208);
+  opacity: 0.5;
+}
+
+
+.div-ul-txt {
+  justify-content: left;
+}
+
+.div-ul-content {
+  width: 600px;
+  margin: 0;
+}
+
+.div-content {
+  display: flex;
+}
+
+.div-content::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  padding: 25px;
+  background-position: center center;
+  background-color: #E8AFAE;
+  position: absolute;
+  left: -27%;
+  cursor: pointer;
+}
+
+.class::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: url();
+  background-size: 10px;
+  background-repeat: no-repeat;
+  padding: 25px;
+  background-position: center center;
+  background-color: #E8AFAE;
+  position: absolute;
+  right: -27%;
+  top: 0;
+  cursor: pointer;
+}
+
+.card {
+  width: 300px;
+  background-color: rgba(0, 0, 0);
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.class-content {
+  padding-top: 70px;
+  padding-left: 40px;
+  padding-bottom: 100px;
+}
+
+.timer {
+  display: flex;
+  background-color: #353334;
+}
+
+.temperature {
+  background-color: #2D2B2B;
+}
+
+.class {
+  background-color: #1D1B1B;
+}
+
+h2 {
+  color: #f3bcbc;
+}
+
+.card-content p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  width: 200px;
+  height: 60px;
+  text-transform: uppercase;
+  background-color: #121212;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid transparent;
+  position: absolute;
+  bottom: -30px;
+  right: 30px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(5px);
+  text-decoration-color: darkblue;
+  color: coral;
+}
+
+.btn:active {
+  transform: scaleY(1.2);
+  background-image: url(../assets/design/left-arov.png);
+  color: goldenrod;
+}
